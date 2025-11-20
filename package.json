@@ -11,8 +11,6 @@
     "typescript": "^5.0.4",
     "wrangler": "^3.4.0"
   }
-}
-{
   "engines": {
     "node": ">=18 <21"
   }
