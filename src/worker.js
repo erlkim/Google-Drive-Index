@@ -622,7 +622,7 @@ const homepage = `<!DOCTYPE html>
       <div class="row align-items-start g-3">
         <div class="col-md-12">
           <div class="card" style="padding: 0 0 0.3rem 0;border-radius:.5rem;width:100%;overflow:hidden;">
-            <iframe src="https://widget.trakteer.id/running-text-default.html?rt_font=Lato&amp;rt_count=6&amp;rt_speed=normal&amp;rt_theme=default&amp;rt_1_clr1=rgba%280%2C+0%2C+0%2C+0%29&amp;rt_2_clr1=rgba%28190%2C+30%2C+45%2C+1%29&amp;rt_2_clr2=rgba%28255%2C+255%2C+255%2C+1%29&amp;rt_2_clr3=rgba%28255%2C+200%2C+73%2C+1%29&amp;rt_septype=image&amp;rt_messages=Donasi+kuy&amp;rt_txtshadow=false&amp;creator_name=jovanzers&amp;page_url=trakteer.id/jovanzers&amp;mod=3&amp;key=trstream-0Cd1Li6Gi6gLtK6GT84w&amp;hash=q07y4nqv7kp4wkxv" height="40px" width="100%" style="border:none; color-scheme: light;"></iframe>
+            <iframe src="https://widget.trakteer.id/running-text-default.html?rt_font=Lato&amp;rt_count=6&amp;rt_speed=normal&amp;rt_theme=default&amp;rt_1_clr1=rgba%280%2C+0%2C+0%2C+0%29&amp;rt_2_clr1=rgba%28190%2C+30%2C+45%2C+1%29&amp;rt_2_clr2=rgba%28255%2C+255%2C+255%2C+1%29&amp;rt_2_clr3=rgba%28255%2C+200%2C+73%2C+1%29&amp;rt_septype=image&amp;rt_messages=Donasi+kuy&amp;rt_txtshadow=false&amp;creator_name=erlkim&amp;page_url=trakteer.id/erlkim&amp;mod=3&amp;key=trstream-0Cd1Li6Gi6gLtK6GT84w&amp;hash=q07y4nqv7kp4wkxv" height="40px" width="100%" style="border:none; color-scheme: light;"></iframe>
           </div>
         </div>
         <div class="col-md-12">
@@ -641,7 +641,7 @@ const homepage = `<!DOCTYPE html>
             </div>
             <div class="card-body d-flex align-items-center justify-content-center">
               <div class="donate btn p-0">
-                <a class="btn" href="https://trakteer.id/jovanzers/tip" title="Click me!" style="background: #BE1E2D;" target="_blank">
+                <a class="btn" href="https://trakteer.id/erlkim/tip" title="Click me!" style="background: #BE1E2D;" target="_blank">
                   <i class="fab fa-paypal"></i>Trakteer </a>
                 <div class="qrcode card" style="padding: 1rem 1rem 0 1rem;">
                   <div style="padding-bottom: 1rem;">Thank you very much ❤</div>
@@ -730,7 +730,7 @@ const homepage = `<!DOCTYPE html>
    </body>
   <script src="${uiConfig.jsdelivr_cdn_src}@${uiConfig.version}/assets/homepage.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-  <script type='text/javascript' src='https://assets.trakteer.id/js/trbtn-overlay.min.js'></script><script type='text/javascript' class='troverlay'>(function() {var trbtnId = trbtnOverlay.init('Donasi','#be1e2d','https://trakteer.id/jovanzers/tip/embed/modal','https://cdn.trakteer.id/images/mix/cendol.png','40','floating-left');trbtnOverlay.draw(trbtnId);})();</script>
+  <script type='text/javascript' src='https://assets.trakteer.id/js/trbtn-overlay.min.js'></script><script type='text/javascript' class='troverlay'>(function() {var trbtnId = trbtnOverlay.init('Donasi','#be1e2d','https://trakteer.id/erlkim/tip/embed/modal','https://cdn.trakteer.id/images/mix/cendol.png','40','floating-left');trbtnOverlay.draw(trbtnId);})();</script>
 </html>`
 
 const login_html = `<html>
@@ -1195,7 +1195,7 @@ async function handleRequest(request, event) {
   let path = url.pathname;
   let hostname = url.hostname;
   if (path == '/app.js') {
-    const js = await fetch('https://gitlab.com/jovanzers/Google-Drive-Index/-/raw/dev/src/app.js', {
+    const js = await fetch('https://raw.githubusercontent.com/erlkim/Google-Drive-Index/refs/heads/master/src/app.js', {
       method: 'GET',
     })
     const data = await js.text()
@@ -1209,7 +1209,7 @@ async function handleRequest(request, event) {
     });
   }
   if (path == '/assets/homepage.js') {
-    const js = await fetch('https://gitlab.com/jovanzers/Google-Drive-Index/-/raw/dev/assets/homepage.js', {
+    const js = await fetch('https://raw.githubusercontent.com/erlkim/Google-Drive-Index/refs/heads/master/assets/homepage.js', {
       method: 'GET',
     })
     const data = await js.text()
